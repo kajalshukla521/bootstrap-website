@@ -1,367 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronic Shop</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    
-    <!-- Swiper CSS (if you plan to use it) -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronic Shop</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobilesidebar.css">
 </head>
+
 <body>
-    <!-- Top Navbar -->
-    <div class="top-navbar bg-light py-2">
-      <div class="container d-flex justify-content-between align-items-center">
-          <p class="mb-0">WELCOME TO OUR SHOP</p>
-          <div class="icons">
-              <a href="login.html" class="me-3 text-decoration-none text-dark">
-                  <img src="./images/register.png" alt="Login" width="18px"> Login
-              </a>
-              <a href="register.html" class="text-decoration-none text-dark">
-                  <img src="./images/register.png" alt="Register" width="18px"> Register
-              </a>
-          </div>
+  <!-- Top Navbar -->
+  <div class="top-navbar bg-light py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">WELCOME TO OUR SHOP</p>
+      <div class="icons">
+        <a href="login.html" class="me-3 text-decoration-none text-dark">
+          <img src="./images/register.png" alt="Login" width="18px"> Login
+        </a>
+        <a href="register.html" class="text-decoration-none text-dark">
+          <img src="./images/register.png" alt="Register" width="18px"> Register
+        </a>
       </div>
     </div>
-    
-    <!-- Main Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" id="logo">
-                <span id="span1">E</span>Lectronic <span>Shop</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="product-details.html">Product</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
-                          <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
-                          <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
-                          <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
-                          <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
-                          <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
-                          <li><a class="dropdown-item" href="category-laptop.html">Laptop</a></li>
-                          <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>   
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-2" href="addto-cart.html"><i class="fas fa-shopping-cart"></i></a>
-                    </li>
-                </ul>
-                <form class="d-flex" id="search" role="search">
-                  <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
-                </form>
-            </div>
-        </div>
-    </nav>
-  
-    <section class="h-100">
-      <div class="container h-100 py-5">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-10">
-    
-            <!-- Cart Items -->
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                      class="img-fluid rounded-3" alt="Cotton T-shirt">
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Mobile</p>
-                    <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button class="btn btn-link px-2 decrease-quantity">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input min="1" name="quantity" value="1" type="number" class="form-control form-control-sm quantity" />
-                    <button class="btn btn-link px-2 increase-quantity">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0 item-price">$499.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
+  </div>
+  <!-- Top Navbar -->
 
-           
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
-                      class="img-fluid rounded-3" alt="Cotton T-shirt">
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Basic T-shirt</p>
-                    <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button class="btn btn-link px-2 decrease-quantity">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input min="1" name="quantity" value="1" type="number" class="form-control form-control-sm quantity" />
-                    <button class="btn btn-link px-2 increase-quantity">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0 item-price">$399.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
-                      class="img-fluid rounded-3" alt="Cotton T-shirt">
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Mobile</p>
-                    <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button class="btn btn-link px-2 decrease-quantity">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input min="1" name="quantity" value="1" type="number" class="form-control form-control-sm quantity" />
-                    <button class="btn btn-link px-2 increase-quantity">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0 item-price">$399.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="card rounded-3 mb-4">
-              <div class="card-body p-4">
-                <div class="row d-flex justify-content-between align-items-center">
-                  <div class="col-md-2 col-lg-2 col-xl-2">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
-                      class="img-fluid rounded-3" alt="Cotton T-shirt">
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
-                    <p class="lead fw-normal mb-2">Mobile</p>
-                    <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
-                  </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button class="btn btn-link px-2 decrease-quantity">
-                      <i class="fas fa-minus"></i>
-                    </button>
-                    <input min="1" name="quantity" value="1" type="number" class="form-control form-control-sm quantity" />
-                    <button class="btn btn-link px-2 increase-quantity">
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                    <h5 class="mb-0 item-price">$399.00</h5>
-                  </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Total Items and Total Price -->
-            <div class="card">
-              <div class="card-body p-4">
-                <div class="row">
-                  <div class="col-md-8">
-                    <h5 class="mb-0">Total Items: <span id="total-items"></span></h5>
-                  </div>
-                  <div class="col-md-4 text-end">
-                    <h5 class="mb-0">Total Price: <span id="total-price">$898.00</span></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Checkout Button -->
-            <div class="text-center my-4">
-              <a href="checkout.html" class="btn btn-primary btn-lg">Checkout</a>
-            </div>
-
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+        <span id="span1">E</span>Lectronic <span>Shop</span>
+      </a>
+      <button class="navbar-toggler" type="button" onclick="toggleSidebar()" aria-label="Toggle navigation">
+        <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-details.html">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> Category </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
+              <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
+              <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
+              <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
+              <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
+              <li><a class="dropdown-item" href="category-leptop.html">Laptop</a></li>
+              <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="addto-cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" id="search" role="search">
+          <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+              aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-search"></i>
+            </span>
           </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Navbar -->
+
+
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <span class="mobile-sidebar-close" onclick="toggleSidebar()">&times;</span>
+    <a class="mobile-menu1" href="index.html">Home</a>
+    <a href="product-details.html">Product</a>
+
+    <!-- Category Dropdown -->
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle" id="mobileCategoryDropdown" onclick="toggleDropdown(event)">
+        Category
+      </a>
+      <div class="dropdown-menu" aria-labelledby="mobileCategoryDropdown">
+        <a class="dropdown-item " href="category-mobile.html">Mobile Phone</a>
+        <a class="dropdown-item" href="category-cameras.html">Cameras</a>
+        <a class="dropdown-item " href="category-fridge.html">Fridge</a>
+        <a class="dropdown-item" href="category-ac.html">AC</a>
+        <a class="dropdown-item " href="category-smartwatch.html">Smart Watch</a>
+        <a class="dropdown-item" href="category-headphone.html">Headphone</a>
+        <a class="dropdown-item " href="category-leptop.html">Laptop</a>
+        <a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a>
+      </div>
+    </div>
+
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="wishlist.html">
+      <i class="fas fa-heart"></i>
+    </a>
+    <a href="addto-cart.html">
+      <i class="fas fa-shopping-cart"></i>
+    </a>
+  </div>
+
+
+
+
+  <section class="h-100">
+    <div class="container h-100 py-5">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-10">
+
+          <!-- Cart Items -->
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Mobile</p>
+                  <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2 decrease-quantity">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input min="1" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm quantity" />
+                  <button class="btn btn-link px-2 increase-quantity">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0 item-price">$499.00</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Basic T-shirt</p>
+                  <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2 decrease-quantity">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input min="1" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm quantity" />
+                  <button class="btn btn-link px-2 increase-quantity">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0 item-price">$399.00</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Mobile</p>
+                  <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2 decrease-quantity">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input min="1" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm quantity" />
+                  <button class="btn btn-link px-2 increase-quantity">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0 item-price">$399.00</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card rounded-3 mb-4">
+            <div class="card-body p-4">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-md-2 col-lg-2 col-xl-2">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
+                    class="img-fluid rounded-3" alt="Cotton T-shirt">
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3">
+                  <p class="lead fw-normal mb-2">Mobile</p>
+                  <p><span class="text-muted">Brand-name: </span>Apple <span class="text-muted">Color: </span>Blue</p>
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                  <button class="btn btn-link px-2 decrease-quantity">
+                    <i class="fas fa-minus"></i>
+                  </button>
+                  <input min="1" name="quantity" value="1" type="number"
+                    class="form-control form-control-sm quantity" />
+                  <button class="btn btn-link px-2 increase-quantity">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <h5 class="mb-0 item-price">$399.00</h5>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Total Items and Total Price -->
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-md-8">
+                  <h5 class="mb-0">Total Items: <span id="total-items"></span></h5>
+                </div>
+                <div class="col-md-4 text-end">
+                  <h5 class="mb-0">Total Price: <span id="total-price">$898.00</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkout Button -->
+          <div class="text-center my-4">
+            <a href="checkout.html" class="btn btn-primary btn-lg">Checkout</a>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-     
 
-     <!-- footer -->
-     <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
 
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Electronic Shop</h3>
-              <p>
-                kajal<br>
-                indore<br>
-                india <br>
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Electronic Shop</h3>
+            <p>
+              kajal<br>
+              indore<br>
+              india <br>
             </p>
             <strong>Phone:</strong> +7247078069 <br>
             <strong>Email:</strong> kajalshukla@.com <br>
-            </div>
+          </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Usefull Links</h4>
-             <ul>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+            <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policey</a></li>
-             </ul>
-            </div>
+            </ul>
+          </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
 
-             <ul>
+            <ul>
               <li><a href="#">PS 5</a></li>
               <li><a href="#">Computer</a></li>
               <li><a href="#">Gaming Laptop</a></li>
               <li><a href="#">Mobile Phone</a></li>
               <li><a href="#">Gaming Gadget</a></li>
-             </ul>
-            </div>
+            </ul>
+          </div>
 
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Social Networks</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
 
-              <div class="socail-links mt-3">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
 
           </div>
+
         </div>
       </div>
-      <hr>
-      <div class="container py-4">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
-        </div>
-        
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
       </div>
-    </footer>
-    <!-- footer -->
 
-   
+    </div>
+  </footer>
+  <!-- footer -->
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(document).ready(function () {
-          // Update total price and total items
-          function updateTotals() {
-              let total = 0;
-              let totalItems = 0;
-              $('.item-price').each(function() {
-                  const price = parseFloat($(this).text().replace('$', ''));
-                  const quantity = parseInt($(this).closest('.row').find('.quantity').val());
-                  total += price * quantity;
-                  totalItems += quantity; // Count total items
-              });
-              $('#total-price').text('$' + total.toFixed());
-              $('#total-items').text(totalItems); // Display total items
-          }
 
-          // Increase quantity
-          $('.increase-quantity').on('click', function () {
-              const quantityInput = $(this).siblings('.quantity');
-              const currentVal = parseInt(quantityInput.val());
-              quantityInput.val(currentVal + 1);
-              updateTotals();
-          });
 
-          // Decrease quantity
-          $('.decrease-quantity').on('click', function () {
-              const quantityInput = $(this).siblings('.quantity');
-              const currentVal = parseInt(quantityInput.val());
-              if (currentVal > 1) {
-                  quantityInput.val(currentVal - 1);
-                  updateTotals();
-              }
-          });
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/mobilesidebar.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Update total price and total items
+      function updateTotals() {
+        let total = 0;
+        let totalItems = 0;
+        $('.item-price').each(function () {
+          const price = parseFloat($(this).text().replace('$', ''));
+          const quantity = parseInt($(this).closest('.row').find('.quantity').val());
+          total += price * quantity;
+          totalItems += quantity; // Count total items
+        });
+        $('#total-price').text('$' + total.toFixed());
+        $('#total-items').text(totalItems); // Display total items
+      }
 
-          // Initialize totals on page load
-          updateTotals();
+      // Increase quantity
+      $('.increase-quantity').on('click', function () {
+        const quantityInput = $(this).siblings('.quantity');
+        const currentVal = parseInt(quantityInput.val());
+        quantityInput.val(currentVal + 1);
+        updateTotals();
       });
-    </script>
+
+      // Decrease quantity
+      $('.decrease-quantity').on('click', function () {
+        const quantityInput = $(this).siblings('.quantity');
+        const currentVal = parseInt(quantityInput.val());
+        if (currentVal > 1) {
+          quantityInput.val(currentVal - 1);
+          updateTotals();
+        }
+      });
+
+      // Initialize totals on page load
+      updateTotals();
+    });
+  </script>
 </body>
+
 </html>

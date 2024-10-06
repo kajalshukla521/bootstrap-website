@@ -33,39 +33,43 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     
-    <!-- Swiper CSS (if you plan to use it) -->
+   
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
+  
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/mobilesidebar.css">
+
    
- <!-- Top Navbar -->
- <div class="top-navbar bg-light py-2">
-  <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">WELCOME TO OUR SHOP</p>
-      <div class="icons">
-          <a href="login.html" class="me-3 text-decoration-none text-dark">
-              <img src="./images/register.png" alt="Login" width="18px"> Login
-          </a>
-          <a href="register.html" class="text-decoration-none text-dark">
-              <img src="./images/register.png" alt="Register" width="18px"> Register
-          </a>
-      </div>
-  </div>
-</div>
-<!-- Top Navbar -->
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <div class="top-navbar bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">WELCOME TO OUR SHOP</p>
+            <div class="icons">
+                <a href="login.html" class="me-3 text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Login" width="18px"> Login
+                </a>
+                <a href="register.html" class="text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Register" width="18px"> Register
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Top Navbar -->
+
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
-        <!-- Navbar content -->
-      
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="logo">
                 <span id="span1">E</span>Lectronic <span>Shop</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()" aria-label="Toggle navigation">
                 <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -77,27 +81,24 @@
                         <a class="nav-link" href="product-details.html">Product</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
-                          <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
-                          <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
-                          <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
-                          <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
-                          <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
-                          <li><a class="dropdown-item" href="category-leptop.html">Laptop</a></li>
-                          <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
+                            <li><a class="dropdown-item text-center" href="category-mobile.html">Mobile Phone</a></li>
+                            <li><a class="dropdown-item text-center" href="category-cameras.html">Cameras</a></li>
+                            <li><a class="dropdown-item text-center" href="category-fridge.html">Fridge</a></li>
+                            <li><a class="dropdown-item text-center" href="category-ac.html">AC</a></li>
+                            <li><a class="dropdown-item text-center" href="category-smartwatch.html">Smart Watch</a></li>
+                            <li><a class="dropdown-item text-center" href="category-headphone.html">Headphone</a></li>
+                            <li><a class="dropdown-item text-center" href="category-leptop.html">Laptop</a></li>
+                            <li><a class="dropdown-item text-center" href="category-pcmonitor.html">PC Monitor</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>   
-                    </li>
+                        <a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
                     </li>
@@ -106,21 +107,53 @@
                     </li>
                 </ul>
                 <form class="d-flex" id="search" role="search">
-                  <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
                 </form>
             </div>
         </div>
     </nav>
     <!-- Main Navbar -->
 
+    
 
-
-
+<!-- Mobile Sidebar -->
+<div class="mobile-sidebar" id="mobileSidebar">
+    <span class="mobile-sidebar-close" onclick="toggleSidebar()">&times;</span>
+    <a class="mobile-menu1" href="index.html">Home</a>
+    <a href="product-details.html">Product</a>
+    
+    <!-- Category Dropdown -->
+    <div class="dropdown">
+        <a href="#" class="dropdown-toggle" id="mobileCategoryDropdown" onclick="toggleDropdown(event)">
+            Category 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="mobileCategoryDropdown">
+            <a class="dropdown-item " href="category-mobile.html">Mobile Phone</a>
+            <a class="dropdown-item" href="category-cameras.html">Cameras</a>
+            <a class="dropdown-item " href="category-fridge.html">Fridge</a>
+            <a class="dropdown-item"   href="category-ac.html">AC</a>
+            <a class="dropdown-item " href="category-smartwatch.html">Smart Watch</a>
+            <a class="dropdown-item" href="category-headphone.html">Headphone</a>
+            <a class="dropdown-item " href="category-leptop.html">Laptop</a>
+            <a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a>
+        </div>
+    </div>
+    
+    <a  href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="wishlist.html">
+        <i class="fas fa-heart"></i> 
+    </a>
+    <a href="addto-cart.html">
+        <i class="fas fa-shopping-cart"></i> 
+    </a>
+</div>
 
 
 
@@ -489,6 +522,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/mobilesidebar.js"></script>
 
   <!-- Initialize Swiper -->
   <script>

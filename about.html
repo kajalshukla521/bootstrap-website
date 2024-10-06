@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Electronic Shop</title>
 
     <!-- Bootstrap CSS -->
@@ -18,50 +16,18 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Swiper CSS (if you plan to use it) -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <!-- FontAwesome (for the search icon) -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobilesidebar.css">
     <link rel="stylesheet" href="css/about.css">
 
 
 
-    <script>
-        // Initialize Swiper
-        var swiper = new Swiper('.mySwiper', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                
-                576: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-                
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                }
-            }
-        });
-    </script>
+
+
 </head>
 
 <body>
@@ -84,15 +50,11 @@
 
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
-        <!-- Navbar content -->
-
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="logo">
                 <span id="span1">E</span>Lectronic <span>Shop</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()" aria-label="Toggle navigation">
                 <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -105,9 +67,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
+                            data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
                             <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
@@ -141,14 +101,52 @@
                         </span>
                     </div>
                 </form>
-
-
-
-
             </div>
         </div>
     </nav>
     <!-- Main Navbar -->
+
+
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <span class="mobile-sidebar-close" onclick="toggleSidebar()">&times;</span>
+        <a class="mobile-menu1" href="index.html">Home</a>
+        <a href="product-details.html">Product</a>
+
+        <!-- Category Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="mobileCategoryDropdown" onclick="toggleDropdown(event)">
+                Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="mobileCategoryDropdown">
+                <a class="dropdown-item " href="category-mobile.html">Mobile Phone</a>
+                <a class="dropdown-item" href="category-cameras.html">Cameras</a>
+                <a class="dropdown-item " href="category-fridge.html">Fridge</a>
+                <a class="dropdown-item" href="category-ac.html">AC</a>
+                <a class="dropdown-item " href="category-smartwatch.html">Smart Watch</a>
+                <a class="dropdown-item" href="category-headphone.html">Headphone</a>
+                <a class="dropdown-item " href="category-leptop.html">Laptop</a>
+                <a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a>
+            </div>
+        </div>
+
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="wishlist.html">
+            <i class="fas fa-heart"></i>
+        </a>
+        <a href="addto-cart.html">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+
+
+
+
+
+
+
 
     <div class="container" id="about">
         <h3>PRODUCT</h3>
@@ -387,13 +385,14 @@
 
     <!-- Swiper's JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/mobilesidebar.js"></script>
 
     <script>
         var swiper = new Swiper('.mySwiper', {
             loop: true,
             autoplay: {
-                delay: 2500, 
-                disableOnInteraction: false, 
+                delay: 2500,
+                disableOnInteraction: false,
             },
             slidesPerView: 3, // Display 3 cards at a time
             spaceBetween: 30, // Space between each card

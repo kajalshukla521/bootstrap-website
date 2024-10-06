@@ -43,3 +43,4 @@ function handleFormSubmit(event) {
   function sendOtp() {
     alert("OTP has been sent! Please check your phone or email.");
   }
+  

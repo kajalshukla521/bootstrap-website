@@ -1,0 +1,108 @@
+/* Sidebar styling for mobile */
+.mobile-sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(67, 0, 86); /* Dark purple background */
+    z-index: 9999;
+    transition: 0.3s;
+    padding-top: 50px;
+   
+}
+
+.mobile-sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+    display: block;
+    transition: 0.3s;
+}
+
+.mobile-sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+.mobile-sidebar i {
+    margin-right: 10px;
+}
+
+.mobile-sidebar-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.mobile-sidebar.show {
+    left: 0;
+}
+
+/* Dropdown styling for mobile */
+.dropdown {
+    position: relative;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+     /* White text for dropdown toggle */
+}
+
+.dropdown-menu {
+    display: none;
+
+    
+    padding: 0;
+    width: 100%;
+    border: 1px solid rgb(67, 0, 86); /* Dark purple border for visibility */
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    color: rgb(67, 0, 86); /* Dark purple text for menu items */
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(67, 0, 86, 0.1); /* Hover background color */
+    color: rgb(67, 0, 86); /* Ensure text remains visible */
+}
+
+/* Ensuring the dropdown opens */
+.dropdown.show .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu :hover{
+    color: rgb(67, 0, 86);
+
+}
+/* Dropdown menu item styles */
+.dropdown-menu .dropdown-item {
+    padding: 10px 15px;
+    color: rgb(67, 0, 86); 
+    background-color: white; 
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(67, 0, 86); 
+    color: white; 
+}
+

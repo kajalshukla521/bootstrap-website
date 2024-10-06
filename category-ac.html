@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>AC </title>
+    <title>Electronic Shop</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,12 +16,10 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 
-    <!-- Swiper CSS (if you plan to use it) -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/mobilesidebar.css">
 
     <style>
         .color-btn {
@@ -100,16 +96,13 @@
     </div>
     <!-- Top Navbar -->
 
+    <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
-        <!-- Navbar content -->
-
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="logo">
                 <span id="span1">E</span>Lectronic <span>Shop</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" onclick="toggleSidebar()" aria-label="Toggle navigation">
                 <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -122,9 +115,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Category
-                        </a>
+                            data-bs-toggle="dropdown" aria-expanded="false"> Category </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
                             <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
@@ -161,6 +152,49 @@
             </div>
         </div>
     </nav>
+    <!-- Main Navbar -->
+
+
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <span class="mobile-sidebar-close" onclick="toggleSidebar()">&times;</span>
+        <a class="mobile-menu1" href="index.html">Home</a>
+        <a href="product-details.html">Product</a>
+
+        <!-- Category Dropdown -->
+        <div class="dropdown">
+            <a href="#" class="dropdown-toggle" id="mobileCategoryDropdown" onclick="toggleDropdown(event)">
+                Category
+            </a>
+            <div class="dropdown-menu" aria-labelledby="mobileCategoryDropdown">
+                <a class="dropdown-item " href="category-mobile.html">Mobile Phone</a>
+                <a class="dropdown-item" href="category-cameras.html">Cameras</a>
+                <a class="dropdown-item " href="category-fridge.html">Fridge</a>
+                <a class="dropdown-item" href="category-ac.html">AC</a>
+                <a class="dropdown-item " href="category-smartwatch.html">Smart Watch</a>
+                <a class="dropdown-item" href="category-headphone.html">Headphone</a>
+                <a class="dropdown-item " href="category-leptop.html">Laptop</a>
+                <a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a>
+            </div>
+        </div>
+
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="wishlist.html">
+            <i class="fas fa-heart"></i>
+        </a>
+        <a href="addto-cart.html">
+            <i class="fas fa-shopping-cart"></i>
+        </a>
+    </div>
+
+
+
+
+
+
+
 
     <div class="container-fluid mt-5">
         <div class="row">
@@ -502,6 +536,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/mobilesidebar.js"></script>
 
 </body>
 
