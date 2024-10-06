@@ -20,21 +20,20 @@ function handleFormSubmit(event) {
         // If the input matches the email pattern
         responseMessage.innerHTML = `<p class="text-success">OTP has been sent to ${emailPhone}.</p>`;
         
-        // Hide the submit button and show the "OTP Send" button
         submitButtonContainer.style.display = "none";
         otpButtonContainer.style.display = "block";
     } else if (phonePattern.test(emailPhone)) {
-        // If the input matches the phone pattern
+        
         responseMessage.innerHTML = `<p class="text-success">A call or SMS has been sent to ${emailPhone}.</p>`;
         
-        // Hide the submit button and show the "OTP Send" button
+        
         submitButtonContainer.style.display = "none";
         otpButtonContainer.style.display = "block";
     } else {
         // If the input is invalid
         responseMessage.innerHTML = '<p class="text-danger">Please enter a valid email or phone number.</p>';
         
-        // Keep the "Submit" button visible and hide the "OTP Send" button
+        
         submitButtonContainer.style.display = "block";
         otpButtonContainer.style.display = "none";
     }

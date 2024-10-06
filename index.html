@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Electronic Shop</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-    
+
     <!-- Swiper CSS (if you plan to use it) -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
@@ -60,8 +61,9 @@
         });
     </script>
 </head>
+
 <body>
-    
+
     <!-- Top Navbar -->
     <div class="top-navbar bg-light py-2">
         <div class="container d-flex justify-content-between align-items-center">
@@ -80,13 +82,14 @@
     <!-- Main Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
         <!-- Navbar content -->
-      
+
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="logo">
                 <span id="span1">E</span>Lectronic <span>Shop</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -98,7 +101,7 @@
                         <a class="nav-link" href="product-details.html">Product</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Category
                         </a>
@@ -111,13 +114,13 @@
                             <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
                             <li><a class="dropdown-item" href="category-leptop.html">Laptop</a></li>
                             <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
-                          </ul>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>   
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
@@ -128,24 +131,25 @@
                 </ul>
                 <form class="d-flex" id="search" role="search">
                     <div class="input-group">
-                      <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-                      <span class="input-group-text" id="basic-addon1">
-                        <i class="fas fa-search"></i>
-                      </span>
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-search"></i>
+                        </span>
                     </div>
-                  </form>
+                </form>
             </div>
         </div>
     </nav>
     <!-- Main Navbar -->
- 
-     <!-- Home Section -->
-     <section class="home bg-light py-5">
+
+    <!-- Home Section -->
+    <section class="home bg-light py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
                     <div class="content">
-                        <h1> 
+                        <h1>
                             <span>Electronic Products</span>
                             <br>
                             Up To <span id="span2">50%</span> Off
@@ -169,509 +173,497 @@
     <!-- Home Section -->
 
     <div class="container ">
-      <h1 class=" text-center"><span style="color: rgb(67, 0, 86); text-shadow: 0px 1px 1px black;"> Product </span> <span style="color: rgb(67, 0, 86); text-shadow: 0px 1px 1px black;">Category</span></h1>
-      <div class="swiper mySwiper mt-5">
-          <div class="swiper-wrapper">
-              <!-- Card 1 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/iphone 13 pro.png" class="card-img-top" alt="Card 1">
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="category-mobile.html" class="text-decoration-none text-dark">Mobile</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product </p>
-                          <a href="addto-cart.html" class="btn">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/laptop2.png" class="card-img-top" alt="Card 2">
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="category-leptop.html" class="text-dark text-decoration-none">Leptop</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/dslr camera.png" class="card-img-top" alt="Card 3">
-                      <div class="card-body">
-                         <h5> <a href="category-cameras.html" class="text-dark text-decoration-none"> camera</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 4 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/fridge1.png" class="card-img-top" alt="Card 4">
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="category-fridge.html"  class="text-dark text-decoration-none">Fridge</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 5 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/phone1.png" class="card-img-top" alt="Card 5">
-                      <div class="card-body">
-                          <h5 class="card-title"> <a href="category-mobile.html" class="text-decoration-none text-center text-dark">Phone</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 6 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/pcm1.png" class="card-img-top" alt="Card 6">
-                      <div class="card-body">
-                          <h5 class="card-title"><a href="category-pcmonitor.html" class="text-dark text-decoration-none">PCM</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 7 -->
-              <div class="swiper-slide">
-                  <div class="card">
-                      <img src="images/w1.png" class="card-img-top" alt="Card 7">
-                      <div class="card-body">
-                          <h5 class="card-title"> <a href="category-smartwatch.html" class="text-decoration-none text-dark">Smart Watch</a></h5>
-                          <p class="card-text">last 20 days most pepole like this product</p>
-                          <a href="addto-cart.html" class="btn ">Order-Now</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <h1 class=" text-center"><span style="color: rgb(67, 0, 86); text-shadow: 0px 1px 1px black;"> Product </span>
+            <span style="color: rgb(67, 0, 86); text-shadow: 0px 1px 1px black;">Category</span></h1>
+        <div class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+                <!-- Card 1 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/iphone 13 pro.png" class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="category-mobile.html"
+                                    class="text-decoration-none text-dark">Mobile</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product </p>
+                            <a href="addto-cart.html" class="btn">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/laptop2.png" class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="category-leptop.html"
+                                    class="text-dark text-decoration-none">Leptop</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/dslr camera.png" class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5> <a href="category-cameras.html" class="text-dark text-decoration-none"> camera</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/fridge1.png" class="card-img-top" alt="Card 4">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="category-fridge.html"
+                                    class="text-dark text-decoration-none">Fridge</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/phone1.png" class="card-img-top" alt="Card 5">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="category-mobile.html"
+                                    class="text-decoration-none text-center text-dark">Phone</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/pcm1.png" class="card-img-top" alt="Card 6">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="category-pcmonitor.html"
+                                    class="text-dark text-decoration-none">PCM</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="images/w1.png" class="card-img-top" alt="Card 7">
+                        <div class="card-body">
+                            <h5 class="card-title"> <a href="category-smartwatch.html"
+                                    class="text-decoration-none text-dark">Smart Watch</a></h5>
+                            <p class="card-text">last 20 days most pepole like this product</p>
+                            <a href="addto-cart.html" class="btn ">Order-Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-          <!-- Optional Swiper controls -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-      </div>
-  </div>
-
-
-  <!-- Product Cards -->
-  <section class="product-cards py-5">
-    <div class="container">
-        <h1 class="text-center mb-4" ><span style="color: rgb(67, 0, 86)">Product</span></h1>
-        <div class="row">
-            <!-- Product Card 1 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/p6.png" class="card-img-top img-fluid" alt="Iphone 13 Pro">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"><a href="category-mobile.html" class="text-decoration-none text-dark">Iphone 13 Pro</a></h5>
-                        <a href="category-mobile.html" class="card-text text-center text-dark text-decoration-none">
-                            Lorem ipsum dolor sit amet.
-                        </a>
-                        
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 2 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/dslr camera.png" class="card-img-top img-fluid" alt="Airpods">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"> <a href="category-cameras.html" class="text-decoration-none text-dark">camera</a></h5>
-                        <a href="category-cameras.html" class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 3 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/laptop2.png" class="card-img-top img-fluid" alt="Laptop">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center">  <a href="category-leptop.html" class="text-decoration-none text-dark">Laptop</a></h5>
-                        <a href="category-leptop.html" class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 4 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/fridge1.png" class="card-img-top img-fluid" alt="iPad">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"> <a href="category-mobile.html" class="text-decoration-none text-dark">iPad</a></h5>
-                        <a href="category-fridge.html" class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat similar blocks for additional products -->
-            <!-- Product Card 5 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/w1.png" class="card-img-top img-fluid" alt="Smart Watch">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"> <a href="category-smartwatch.html" class="text-decoration-none text-dark">Smart Watch </a></h5>
-                        <a href="category-smartwatch.html" class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 6 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/pcm1.png" class="card-img-top img-fluid" alt="PC Monitor">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"> <a href="category-pcmonitor.html" class="text-decoration-none text-dark">PC Monitor</a></h5>
-                        <a href="category-pcmonitor.html" class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Product Card 7 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/phone1.png" class="card-img-top img-fluid" alt="iPhone X">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"><a href="category-mobile.html" class="text-decoration-none text-dark">iPhone X</a></h5>
-                        <a href="category-mobile.html" class="card-text text-center text-dark text-decoration-none">Lorem ipsum dolor sit amet.</a>
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>        
-            </div>
-            <!-- Product Card 8 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="card h-100">
-                    <img src="./images/h1.png" class="card-img-top img-fluid" alt="Headphone">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-center"> <a href="category-headphone.html" class="text-decoration-none text-dark">Headphone</a></h5>
-                        <a href="category-headphone.html" class="card-text text-center text-dark text-decoration-none">
-                            Lorem ipsum dolor sit amet.
-                        </a>
-                        
-                        <div class="star text-center mb-2">
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                            <i class="fa-solid fa-star checked text-warning"></i>
-                        </div>
-                        <h5 class="mt-auto text-center">$100 
-                            <p class="text-center">
-                                <a
-                                  href="addto-cart.html"
-                                  class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6" 
-                                >
-                                  <i class="bi bi-cart me-2"></i> Add to cart
-                                </a>
-                              </p>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more product cards as needed -->
+            <!-- Optional Swiper controls -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-</section>
-<!-- Product Cards -->
 
-<!-- Other Cards Section -->
-<section class="other-cards py-5">
-    <div class="container">
-        <div class="row">
-            <!-- Other Card 1 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="card  text-white" style="background-color:  rgb(67 0 86)">
-                    <img src="./images/c1.png" class="card-img img-fluid" alt="Best Laptop">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                        <h3>Best Laptop</h3>
-                        <h5>Latest Collection</h5>
-                        <p>Up To 50% Off</p>
-                        <button class="btn btn-primary">Shop Now</button>
+
+    <!-- Product Cards -->
+    <section class="product-cards py-5">
+        <div class="container">
+            <h1 class="text-center mb-4"><span style="color: rgb(67, 0, 86)">Product</span></h1>
+            <div class="row">
+                <!-- Product Card 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/p6.png" class="card-img-top img-fluid" alt="Iphone 13 Pro">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"><a href="category-mobile.html"
+                                    class="text-decoration-none text-dark">Iphone 13 Pro</a></h5>
+                            <a href="category-mobile.html" class="card-text text-center text-dark text-decoration-none">
+                                Lorem ipsum dolor sit amet.
+                            </a>
+
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
                     </div>
                 </div>
+                <!-- Product Card 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/dslr camera.png" class="card-img-top img-fluid" alt="Airpods">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-cameras.html"
+                                    class="text-decoration-none text-dark">camera</a></h5>
+                            <a href="category-cameras.html" class="card-text text-center text-dark text-decoration-none"
+                                rel="">Lorem ipsum dolor sit amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/laptop2.png" class="card-img-top img-fluid" alt="Laptop">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-leptop.html"
+                                    class="text-decoration-none text-dark">Laptop</a></h5>
+                            <a href="category-leptop.html" class="card-text text-center text-dark text-decoration-none"
+                                rel="">Lorem ipsum dolor sit amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/fridge1.png" class="card-img-top img-fluid" alt="iPad">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-mobile.html"
+                                    class="text-decoration-none text-dark">iPad</a></h5>
+                            <a href="category-fridge.html" class="card-text text-center text-dark text-decoration-none"
+                                rel="">Lorem ipsum dolor sit amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat similar blocks for additional products -->
+                <!-- Product Card 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/w1.png" class="card-img-top img-fluid" alt="Smart Watch">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-smartwatch.html"
+                                    class="text-decoration-none text-dark">Smart Watch </a></h5>
+                            <a href="category-smartwatch.html"
+                                class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor
+                                sit amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/pcm1.png" class="card-img-top img-fluid" alt="PC Monitor">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-pcmonitor.html"
+                                    class="text-decoration-none text-dark">PC Monitor</a></h5>
+                            <a href="category-pcmonitor.html"
+                                class="card-text text-center text-dark text-decoration-none" rel="">Lorem ipsum dolor
+                                sit amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/phone1.png" class="card-img-top img-fluid" alt="iPhone X">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"><a href="category-mobile.html"
+                                    class="text-decoration-none text-dark">iPhone X</a></h5>
+                            <a href="category-mobile.html"
+                                class="card-text text-center text-dark text-decoration-none">Lorem ipsum dolor sit
+                                amet.</a>
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/h1.png" class="card-img-top img-fluid" alt="Headphone">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center"> <a href="category-headphone.html"
+                                    class="text-decoration-none text-dark">Headphone</a></h5>
+                            <a href="category-headphone.html"
+                                class="card-text text-center text-dark text-decoration-none">
+                                Lorem ipsum dolor sit amet.
+                            </a>
+
+                            <div class="star text-center mb-2">
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                                <i class="fa-solid fa-star checked text-warning"></i>
+                            </div>
+                            <h5 class="mt-auto text-center">$100
+                                <p class="text-center">
+                                    <a href="addto-cart.html"
+                                        class="d-inline-flex px-4 mx-auto btn btn-primary btn-lg rounded-0 align-items-center fs-6">
+                                        <i class="bi bi-cart me-2"></i> Add to cart
+                                    </a>
+                                </p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more product cards as needed -->
             </div>
-            <!-- Other Card 2 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="card  text-white" style="background-color: rgb(67 0 86)">
-                    <img src="./images/c2.png" class="card-img img-fluid" alt="Best Headphone">
-                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                        <h3>Best Headphone</h3>
-                        <h5>Latest Collection</h5>
-                        <p>Up To 50% Off</p>
-                        <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </section>
+    <!-- Product Cards -->
+
+    <!-- Other Cards Section -->
+    <section class="other-cards py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Other Card 1 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card  text-white" style="background-color:  rgb(67 0 86)">
+                        <img src="./images/c1.png" class="card-img img-fluid" alt="Best Laptop">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                            <h3>Best Laptop</h3>
+                            <h5>Latest Collection</h5>
+                            <p>Up To 50% Off</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Other Card 2 -->
+                <div class="col-lg-6 col-md-6 mb-4">
+                    <div class="card  text-white" style="background-color: rgb(67 0 86)">
+                        <img src="./images/c2.png" class="card-img img-fluid" alt="Best Headphone">
+                        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                            <h3>Best Headphone</h3>
+                            <h5>Latest Collection</h5>
+                            <p>Up To 50% Off</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
     <!-- offer -->
     <section class="offer bg-light py-5 mt-5">
-      <div class="container">
-          <div class="row text-center">
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <i class="fa-solid fa-cart-shopping fa-2x text-warning mb-2"></i>
-                  <h4>Free Shipping</h4>
-                  <p>On order over $1000</p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <i class="fa-solid fa-rotate-left fa-2x text-warning mb-2"></i>
-                  <h4>Free Returns</h4>
-                  <p>Within 30 days</p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <i class="fa-solid fa-truck fa-2x text-warning mb-2"></i>
-                  <h4>Fast Delivery</h4>
-                  <p>World Wide</p>
-              </div>
-              <div class="col-lg-3 col-md-6 mb-4">
-                  <i class="fa-solid fa-thumbs-up fa-2x text-warning mb-2"></i>
-                  <h4>Big Choice</h4>
-                  <p>Of products</p>
-              </div>
-          </div>
-      </div>
-  </section>
-   
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fa-solid fa-cart-shopping fa-2x text-warning mb-2"></i>
+                    <h4>Free Shipping</h4>
+                    <p>On order over $1000</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fa-solid fa-rotate-left fa-2x text-warning mb-2"></i>
+                    <h4>Free Returns</h4>
+                    <p>Within 30 days</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fa-solid fa-truck fa-2x text-warning mb-2"></i>
+                    <h4>Fast Delivery</h4>
+                    <p>World Wide</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <i class="fa-solid fa-thumbs-up fa-2x text-warning mb-2"></i>
+                    <h4>Big Choice</h4>
+                    <p>Of products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- footer -->
     <footer id="footer">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
 
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3>Electronic Shop</h3>
-              <p>
-                kajal<br>
-                indore<br>
-                india <br>
-            </p>
-            <strong>Phone:</strong> +7247078069 <br>
-            <strong>Email:</strong> kajalshukla@.com <br>
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Electronic Shop</h3>
+                        <p>
+                            kajal<br>
+                            indore<br>
+                            india <br>
+                        </p>
+                        <strong>Phone:</strong> +7247078069 <br>
+                        <strong>Email:</strong> kajalshukla@.com <br>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Usefull Links</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy policey</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+
+                        <ul>
+                            <li><a href="#">PS 5</a></li>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Gaming Laptop</a></li>
+                            <li><a href="#">Mobile Phone</a></li>
+                            <li><a href="#">Gaming Gadget</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Social Networks</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+                        <div class="socail-links mt-3">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-skype"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Usefull Links</h4>
-             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policey</a></li>
-             </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-
-             <ul>
-              <li><a href="#">PS 5</a></li>
-              <li><a href="#">Computer</a></li>
-              <li><a href="#">Gaming Laptop</a></li>
-              <li><a href="#">Mobile Phone</a></li>
-              <li><a href="#">Gaming Gadget</a></li>
-             </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Social Networks</h4>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
-
-              <div class="socail-links mt-3">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-skype"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              </div>
-            
-            </div>
-
-          </div>
         </div>
-      </div>
-      <hr>
-      <div class="container py-4">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+        <hr>
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+            </div>
+
         </div>
-        
-      </div>
     </footer>
     <!-- footer -->
-
-
-
-
 
 
 
     <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-     <!-- Swiper's JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
- 
-     <script>
-         var swiper = new Swiper('.mySwiper', {
-             loop: true,
-             autoplay: {
-                 delay: 2500, // Slide delay in milliseconds
-                 disableOnInteraction: false, // Continue autoplay after interaction
-             },
-             slidesPerView: 3, // Display 3 cards at a time
-             spaceBetween: 30, // Space between each card
-             pagination: {
-                 el: '.swiper-pagination',
-                 clickable: true,
-             },
-             navigation: {
-                 nextEl: '.swiper-button-next',
-                 
-                 prevEl: '.swiper-button-prev',
-             },
-         });
-     </script>
+    <!-- Swiper's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            loop: true,
+            autoplay: {
+                delay: 2500, // Slide delay in milliseconds
+                disableOnInteraction: false, // Continue autoplay after interaction
+            },
+            slidesPerView: 3, // Display 3 cards at a time
+            spaceBetween: 30, // Space between each card
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
