@@ -1,0 +1,12 @@
+/* Custom Button Styles */
+.btn{
+    background-color: rgb(67, 0, 86) !important; /* Custom background color */
+    border-color: rgb(67, 0, 86) !important; /* Custom border color */
+    color: white !important; /* Text color */
+}
+
+/* Optional: Change hover effect */
+.btn {
+    background-color: rgba(67, 0, 86, 0.8) !important; /* Slightly lighter shade on hover */
+    border-color: rgba(67, 0, 86, 0.8) !important;
+}

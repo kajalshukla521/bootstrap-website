@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>desktop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS (if you plan to use it) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        /* Card hover effect */
+        .color-btn {
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            /* Make the buttons circular */
+            cursor: pointer;
+        }
+
+        /* Optional: Add hover effect */
+        .color-btn:hover {
+            opacity: 0.8;
+            /* Slight transparency on hover */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* Cart button styles */
+        .bg-cart {
+            background-color: rgb(67, 0, 86);
+            color: white;
+        }
+
+        .bg-cart:hover {
+            background-color: rgb(90, 0, 115);
+        }
+
+        /* Order Now button */
+
+        .bg-order {
+            background-color: orange !important;
+            color: white;
+            width: 34%;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .bg-order:hover {
+            background-color: darkorange;
+        }
+
+        /* Sidebar styling */
+        .sidebar h4 {
+            color: rgb(67, 0, 86);
+            font-weight: bold;
+        }
+
+        /* Heading color */
+        h6 a {
+            color: rgb(67, 0, 86);
+            text-decoration: none;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <div class="top-navbar bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">WELCOME TO OUR SHOP</p>
+            <div class="icons">
+                <a href="login.html" class="me-3 text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Login" width="18px"> Login
+                </a>
+                <a href="register.html" class="text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Register" width="18px"> Register
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Top Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
+        <!-- Navbar content -->
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <span id="span1">E</span>Lectronic <span>Shop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-details.html">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
+                            <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
+                            <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
+                            <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
+                            <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
+                            <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
+                            <li><a class="dropdown-item" href="category-leptop.html">Laptop</a></li>
+                            <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="addto-cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="search" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar p-4 shadow-sm bg-light rounded">
+
+
+                    <!-- Product Colors -->
+                    <div class="mb-3">
+                        <h6>Available Colors</h6>
+                        <div class="d-flex gap-2">
+                            <button class="color-btn btn-sm1" style="background-color: red;"></button>
+                            <button class="color-btn btn-sm1" style="background-color: blue;"></button>
+                            <button class="color-btn btn-sm1" style="background-color: green;"></button>
+                            <button class="color-btn btn-sm1" style="background-color: black;"></button>
+                            <button class="color-btn btn-sm1" style="background-color: yellow;"></button>
+                        </div>
+                    </div>
+
+                    <!-- Brand Names -->
+                    <div class="mb-3">
+                        <h6>Brand</h6>
+                        <select class="form-select">
+                            <option selected>Select Brand</option>
+                            <option value="1">Dell</option>
+                            <option value="2">Lenvo</option>
+                            <option value="3">Apple</option>
+                            <option value="4">HP</option>
+                            <option value="5">Asus</option>
+                        </select>
+                    </div>
+
+                    <!-- Discount Percentage -->
+                    <div class="mb-3">
+                        <h6>Discount Percentage</h6>
+                        <select class="form-select">
+                            <option selected>Select Discount</option>
+                            <option value="0">0%</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="50">50%</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-md-9">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default">ASUS ZenBook with 1TB SSD & 16GB RAM </a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks</a>
+                                <h3 class="mb-0 font-weight-semibold">$250.99</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">34 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-bolt me-1"></i> <a href="addto-cart.html"
+                                            class="text-light text-decoration-none"> Order Now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default"> ASUS ZenBook with 1TB SSD & 16GB RAM </a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks</a>
+                                <h3 class="mb-0 font-weight-semibold">$320.99</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-half-alt text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">45 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-bolt me-1"></i>
+                                        <a href="addto-cart.html" class="text-light text-decoration-none"> Order Now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default"> >ASUS ZenBook with 1TB SSD & 16GB RAM </a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks</a>
+                                <h3 class="mb-0 font-weight-semibold">$499.99</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">102 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-bolt me-1"></i>
+                                        <a href="addto-cart.html" class="text-light text-decoration-none"> Order Now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default">>ASUS ZenBook with 1TB SSD & 16GB RAM </a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks</a>
+                                <h3 class="mb-0 font-weight-semibold">$420.00</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-half-alt text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">67 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-bolt me-1"></i>
+                                        <a href="addto-cart.html" class="text-light text-decoration-none"> Order
+                                            Now</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default">>ASUS ZenBook with 1TB SSD & 16GB RAM</a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks</a>
+                                <h3 class="mb-0 font-weight-semibold">$1299.99</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">89 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-bolt me-1"></i>
+                                        <a href="addto-cart.html" class="text-light text-decoration-none"> Order Now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="col-md-4 mt-2">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <div class="card-img-actions">
+                                    <img src="images/c1.png" class="card-img img-fluid" alt="Product Image">
+                                </div>
+                            </div>
+                            <div class="card-body bg-light text-center">
+                                <h6 class="font-weight-semibold mb-2">
+                                    <a href="#" class="text-default">>ASUS ZenBook with 1TB SSD & 16GB RAM</a>
+                                </h6>
+                                <a href="#" class="text-muted">Laptops & Notebooks </a>
+                                <h3 class="mb-0 font-weight-semibold">$899.99</h3>
+                                <div>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star text-warning"></i>
+                                    <i class="fa fa-star-half-alt text-warning"></i>
+                                </div>
+                                <div class="text-muted mb-3">55 reviews</div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn bg-cart me-2"><i class="fa fa-cart-plus me-1"></i>
+                                        <a href="addto-cart.html" class="text-decoration-none text-light">Add to
+                                            cart</a></button>
+                                    <button type="button"
+                                        class="btn custom-order-btn bg-order d-flex align-items-center justify-content-center"><i
+                                            class="fa fa-bolt me-1"></i>
+                                        <a href="addto-cart.html" class="text-light text-decoration-none"> Order Now</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class=" text-white py-5" style="background-color: rgb(67, 0, 86)">
+
+
+        <div class="container">
+            <div class="row">
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h3>Electronic Shop</h3>
+                    <p>
+                        kajal <br>
+                        shukla<br>
+                        Indore <br>
+                    </p>
+                    <p><strong>Phone:</strong> +000000000000</p>
+                    <p><strong>Email:</strong> electronicshop@.com</p>
+                </div>
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Useful Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Our Services</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">PS 5</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Computer</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Gaming Laptop</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Mobile Phone</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Gaming Gadget</a></li>
+                    </ul>
+                </div>
+                <!-- Social Networks -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h4>Our Social Networks</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-skype fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Electronic Shop</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS (if you plan to use it) -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Top Navbar -->
+  <div class="top-navbar bg-light py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p class="mb-0">WELCOME TO OUR SHOP</p>
+      <div class="icons">
+        <a href="login.html" class="me-3 text-decoration-none text-dark">
+          <img src="./images/register.png" alt="Login" width="18px"> Login
+        </a>
+        <a href="register.html" class="text-decoration-none text-dark">
+          <img src="./images/register.png" alt="Register" width="18px"> Register
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Top Navbar -->
+  <!-- Main Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
+    <!-- Navbar content -->
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="logo">
+        <span id="span1">E</span>Lectronic <span>Shop</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product-details.html">Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
+              <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
+              <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
+              <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
+              <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
+              <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
+              <li><a class="dropdown-item" href="category-leptop.html">Laptop</a></li>
+              <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="wishlist.html"><i class="fas fa-heart"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-2" href="addto-cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+        <form class="d-flex" id="search" role="search">
+          <div class="input-group">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+              aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Navbar -->
+
+
+
+
+
+
+
+  <section class="checkout-page py-5 ">
+
+    <div class="container">
+      <h2 class="mb-5">Checkout Page</h2>
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-body-secondary">Brief description</small>
+              </div>
+              <span class="text-body-secondary">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
+              <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">−$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                  <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-body-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                <div class="invalid-feedback">
+                  Please enter your shipping address.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Address 2 <span
+                    class="text-body-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              </div>
+
+              <div class="col-md-5">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">Shipping address is the same as my billing
+                address</label>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </div>
+
+            <hr class="my-4">
+
+            <h4 class="mb-3">Payment</h4>
+
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                <label class="form-check-label" for="credit">Credit card</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="debit">Debit card</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                <small class="text-body-secondary">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Electronic Shop</h3>
+            <p>
+              kajal <br>
+              shukla<br>
+              Indore <br>
+            </p>
+            <strong>Phone:</strong> +000000000000000 <br>
+            <strong>Email:</strong> electronicshop@.com <br>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policey</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+
+            <ul>
+              <li><a href="#">PS 5</a></li>
+              <li><a href="#">Computer</a></li>
+              <li><a href="#">Gaming Laptop</a></li>
+              <li><a href="#">Mobile Phone</a></li>
+              <li><a href="#">Gaming Gadget</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">SA coding</a>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

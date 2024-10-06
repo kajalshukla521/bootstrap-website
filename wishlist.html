@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <div class="top-navbar bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p class="mb-0">WELCOME TO OUR SHOP</p>
+            <div class="icons">
+                <a href="login.html" class="me-3 text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Login" width="18px"> Login
+                </a>
+                <a href="register.html" class="text-decoration-none text-dark">
+                    <img src="./images/register.png" alt="Register" width="18px"> Register
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Top Navbar -->
+
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(67, 0, 86);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <span id="span1">E</span>Lectronic <span>Shop</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span><img src="./images/menu.png" alt="Menu" width="30px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product-details.html">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="category-mobile.html">Mobile Phone</a></li>
+                            <li><a class="dropdown-item" href="category-cameras.html">Cameras</a></li>
+                            <li><a class="dropdown-item" href="category-fridge.html">Fridge</a></li>
+                            <li><a class="dropdown-item" href="category-ac.html">AC</a></li>
+                            <li><a class="dropdown-item" href="category-smartwatch.html">Smart Watch</a></li>
+                            <li><a class="dropdown-item" href="category-headphone.html">Headphone</a></li>
+                            <li><a class="dropdown-item" href="category-laptop.html">Laptop</a></li>
+                            <li><a class="dropdown-item" href="category-pcmonitor.html">PC Monitor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="wishlist.html"><i class="fas fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-3" href="addto-cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="search" role="search">
+                    <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                            aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Navbar -->
+
+    <div class="py-3 py-md-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="shopping-cart">
+                        <div class="cart-header d-none d-sm-none d-mb-block d-lg-block">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Products</h4>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h4>Price</h4>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h4>Quantity</h4>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <h4>Remove</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <a href="">
+                                        <label class="product-name">
+                                            <img src="images/iphone 13 pro.png" style="width: 50px; height: 50px" alt="">
+                                         <a class="text-dark text-decoration-none">  smart phone</a>
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 my-auto text-center">
+                                    <label class="price">$569 </label>
+                                </div>
+                                <div class="col-md-2 col-7 my-auto text-center">
+                                    <div class="quantity">
+                                        <div class="input-group">
+                                            <button class="btn btn1 decrease-quantity"><i class="fa fa-minus"></i></button>
+                                            <input type="text" value="1" class="input-quantity form-control text-center" />
+                                            <button class="btn btn1 increase-quantity"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-5 my-auto text-center">
+                                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <a href="">
+                                        <label class="product-name">
+                                            <img src="images/iphone 13 pro.png" style="width: 50px; height: 50px" alt="">
+                                            <a class="text-dark text-decoration-none">  smart phone</a>
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 my-auto text-center">
+                                    <label class="price">$569 </label>
+                                </div>
+                                <div class="col-md-2 col-7 my-auto text-center">
+                                    <div class="quantity">
+                                        <div class="input-group">
+                                            <button class="btn btn1 decrease-quantity"><i class="fa fa-minus"></i></button>
+                                            <input type="text" value="1" class="input-quantity form-control text-center" />
+                                            <button class="btn btn1 increase-quantity"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-5 my-auto text-center">
+                                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div class="row">
+                                <div class="col-md-6 my-auto">
+                                    <a href="">
+                                        <label class="product-name">
+                                            <img src="images/iphone 13 pro.png" style="width: 50px; height: 50px" alt="">
+                                            <a class="text-dark text-decoration-none">  smart phone</a>
+                                        </label>
+                                    </a>
+                                </div>
+                                <div class="col-md-2 my-auto text-center">
+                                    <label class="price">$569 </label>
+                                </div>
+                                <div class="col-md-2 col-7 my-auto text-center">
+                                    <div class="quantity">
+                                        <div class="input-group">
+                                            <button class="btn btn1 decrease-quantity"><i class="fa fa-minus"></i></button>
+                                            <input type="text" value="1" class="input-quantity form-control text-center" />
+                                            <button class="btn btn1 increase-quantity"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-5 my-auto text-center">
+                                    <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+      <!-- footer -->
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Electronic Shop</h3>
+                <p>
+                  kajal<br>
+                  indore<br>
+                  india <br>
+              </p>
+              <strong>Phone:</strong> +7247078069 <br>
+              <strong>Email:</strong> kajalshukla@.com <br>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Usefull Links</h4>
+               <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policey</a></li>
+               </ul>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+  
+               <ul>
+                <li><a href="#">PS 5</a></li>
+                <li><a href="#">Computer</a></li>
+                <li><a href="#">Gaming Laptop</a></li>
+                <li><a href="#">Mobile Phone</a></li>
+                <li><a href="#">Gaming Gadget</a></li>
+               </ul>
+              </div>
+  
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Social Networks</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, quibusdam.</p>
+  
+                <div class="socail-links mt-3">
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-skype"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+              
+              </div>
+  
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container py-4">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Electronic Shop</span></strong>. All Rights Reserved
+          </div>
+          
+        </div>
+      </footer>
+      <!-- footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Handle the quantity increase and decrease
+        document.querySelectorAll('.increase-quantity').forEach(button => {
+            button.addEventListener('click', () => {
+                const inputField = button.parentElement.querySelector('.input-quantity');
+                inputField.value = parseInt(inputField.value) + 1;
+            });
+        });
+
+        document.querySelectorAll('.decrease-quantity').forEach(button => {
+            button.addEventListener('click', () => {
+                const inputField = button.parentElement.querySelector('.input-quantity');
+                const currentValue = parseInt(inputField.value);
+                if (currentValue > 1) {
+                    inputField.value = currentValue - 1;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
